@@ -20,4 +20,13 @@
 
 .navbar a {
     color: #ff6060;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a.active {
+    text-decoration: underline;
 }

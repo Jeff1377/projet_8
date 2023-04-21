@@ -9,12 +9,17 @@
 }
 
 .apart_text {
-    width: 30%;
+    width: 50%;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 18px;
     padding-left: 20px;
     padding-bottom: 20px;
+}
+
+.apart a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 @media screen and (max-width: 768px) {
