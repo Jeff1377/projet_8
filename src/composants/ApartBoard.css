@@ -1,0 +1,23 @@
+.board {
+    background-color: #F7F7F7;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .board {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        
+    }
+}

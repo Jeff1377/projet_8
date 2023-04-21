@@ -1,0 +1,26 @@
+.apart {
+    background-image: linear-gradient(to top, #863535, #ff6060);
+    border-radius: 15px;
+    display: flex;
+    width: 28%;
+    height: 370px;
+    align-items: end;
+    min-width: 280px;
+}
+
+.apart_text {
+    width: 30%;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .apart {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
