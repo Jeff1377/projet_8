@@ -1,0 +1,17 @@
+.logements_banner {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logements_banner img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 415px;
+    width: 100%;
+    filter:brightness(85%);
+    border-radius: 30px;
+    object-fit: cover;
+}

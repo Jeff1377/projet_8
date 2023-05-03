@@ -30,3 +30,9 @@
 .navbar a.active {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        font-size: 12px;
+    }
+}

@@ -1,16 +1,14 @@
 import React from 'react';
 import './App.css';
-import Banner from './composants/Banner.jsx';
-import ApartBoard from './composants/ApartBoard.jsx';
+import { RouterProvider } from "react-router-dom";
+import router from './routes/router.jsx';
 
-function App(props) {
-   console.log (props);
- return (
-   <div>
-      <Banner />
-      <ApartBoard />
-   </div>
- );
-}
+function App() {
+   return (
+     <div>
+        <RouterProvider router={router} />
+     </div>
+   );
+  }
 
-export default App;
+  export default App;

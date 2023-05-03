@@ -1,0 +1,104 @@
+.accom_description {
+    margin-right: auto;
+}
+
+.accom_description .accom_title {
+    font-weight: 500;
+    font-size: 36px;
+}   
+
+.accom_description .accom_text {
+    font-weight: 500;
+    font-size: 18px;
+}   
+
+.accom_owner .owner_name {
+    align-items: end;
+    margin-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    text-align: end;
+    align-items: flex-start;
+}
+
+.accom_owner .owner_name span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.accom_description .accom_plus {
+    display: flex;
+    margin-top: 20px;
+}
+
+.accom_description .accom_plus span {
+    font-size: 14px;
+    background-color: #FF6060;
+    color: #FFFFFF;
+    margin-right: 10px;
+    padding: 5px 40px 5px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.accom_owner {
+    display: flex;
+    flex-direction: column;
+}
+
+.accom_owner .owner_space {
+    display: flex;
+}
+
+.accom_owner .owner_space .owner_pic img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.accom_owner .owner_stars {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #E3E3E3;
+}
+
+.accom_owner .owner_stars .fill {
+    color: #FF6060;
+}
+
+@media screen and (max-width: 768px) {
+    .accom_owner {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 20px;
+    }
+
+    .accom_owner .owner_space {
+        margin-left: auto;
+    }
+
+    .accom_plus {
+        display: flex;
+        width: 100%;
+    }
+    
+    .accom_plus p {
+        padding: 5px 20px 5px 20px;
+        font-size: 10px;
+        min-width: 25%;
+    }
+
+    .accom_description .accom_title {
+        font-size: 18px;
+    }   
+    
+    .accom_description .accom_text {
+        font-size: 14px;
+    }   
+    
+    .accom_owner .owner_name span {
+        font-size: 12px;
+    }
+}

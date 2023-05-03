@@ -1,0 +1,33 @@
+.description .description_title {
+    display: flex;
+    background-color: #FF6060;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    color: #FFFFFF;
+}
+
+.description .description_title p {
+    margin-right: auto;
+}
+
+.description .description_title i {
+    padding-top: 8px;
+}
+
+.description .description_content {
+    background-color: #F7F7F7;
+    padding: 30px 20px 30px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .description .description_title p {
+        font-size: 13px;
+    }
+
+    .description .description_content {
+        font-size: 12px;
+    }
+}

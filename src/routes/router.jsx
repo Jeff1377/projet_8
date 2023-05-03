@@ -1,41 +1,42 @@
 import React from 'react';
-import App from '../App';
-import Footer from '../composants/Footer';
-import Navbar from '../composants/Navbar';
-import { createBrowserRouter } from 'react-router-dom';
+import Footer from '../composants/Footer/Footer';
+import Navbar from '../composants/Navbar/Navbar';
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Carousel from '../pages/Carousel';
+import Error from '../pages/Error';
+import { createBrowserRouter, Outlet } from 'react-router-dom';
+
+const HeadFootLayout = () => {
+    return (
+        <>
+        <Navbar />
+        <Outlet />
+        <Footer />
+        </>
+)};
 
 const router = createBrowserRouter([
-    {
-      path: "/",   
-      element: (
-          <>
-              <Navbar />
-              <App toto="test"/>
-              <Footer />
-          </>
-      ),
-      errorElement: <h1>404</h1>
-    },
-    {
-      path: "/about",
-      element: (
-          <>
-              <Navbar />
-              <h1>A propos</h1>
-              <Footer />
-          </>
-      )
-    },
-    {
-      path: "/carousel",
-      element: (
-          <>
-              <Navbar />
-              <h1>Nos apparts</h1>
-              <Footer />
-          </>
-      )
-    },
+    {   
+      element: <HeadFootLayout />,
+      children: [
+        {
+        path: "/",
+        element: <Home />
+        },
+        {
+        path: "/about",
+        element: <About />
+        },
+        {
+        path: "/carousel",
+        element: <Carousel />
+        },
+        {path: "*",
+        element: <Error />
+        }
+      ] 
+    }
   ]);
 
   export default router;
