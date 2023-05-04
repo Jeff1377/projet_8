@@ -13,8 +13,13 @@
 
 .accom_insert2 {
     display: flex;
-    margin-top: 20px;
     gap: 60px;
+    overflow: hidden;
+}
+
+.accom_insert2 li {
+    list-style-type: none;
+    margin-bottom: 6px;
 }
 
 @media screen and (max-width: 768px) {

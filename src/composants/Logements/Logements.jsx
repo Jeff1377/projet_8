@@ -30,11 +30,13 @@ function Logements() {
         <div className="accoms_page">
             <LogementsBanner imageUrl={thisHouse.cover} />
             <div className="accom_insert1">
-                <LogementsHeader title={thisHouse.title} description={thisHouse.description} location={thisHouse.location} tags={thisHouse.tags} name={thisHouse.host.name} picture={thisHouse.host.picture} rating={thisHouse.rating} key={thisHouse.id} />
+                <LogementsHeader title={thisHouse.title} description={thisHouse.description} location={thisHouse.location} tags={thisHouse.tags} name={thisHouse.host.name} picture={thisHouse.host.picture} rating={thisHouse.rating} />
             </div>
             <div className="accom_insert2">
-                <Collapse title="Description" />
-                <Collapse title="Equipements" />
+                <Collapse title="Description" content={thisHouse.description} />
+                <Collapse title="Equipements" content={thisHouse.equipments.map((equipments) => (
+                    <li key={equipments}>{equipments}</li>
+                ))} />
             </div>
         </div>
     )

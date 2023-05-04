@@ -1,16 +1,21 @@
 import React from 'react';
+import { useState } from 'react';
 import './Collapse.css';
 
 function Collapse(props) {
+    const [isContentUnfold, setIsContentUnfold] = useState(false);
+    const unfoldContent = () => {
+        setIsContentUnfold(!isContentUnfold);
+    };
+    const chevronClass = (isContentUnfold ? "fa-chevron-up" : "fa-chevron-down") + " fas";
+
     return (
         <div className="description">
-        <div className="description_title">
-            <p>{props.title}</p>
-            <i class="fa-solid fa-chevron-up fa-xl"></i>
-        </div>
-        <p className="description_content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore numquam quibusdam voluptate ad possimus ullam facilis quos incidunt suscipit, dolorum provident ipsum odit quam natus laboriosam perspiciatis corrupti, porro est quas temporibus quisquam inventore libero voluptatibus? Autem fuga eaque necessitatibus inventore. Doloribus dicta, ducimus unde ad voluptas facilis aut.
-        </p>
+            <div className="description_title" onClick={unfoldContent}>
+                <p>{props.title}</p>
+                <i className={chevronClass}></i>
+            </div>
+            {isContentUnfold && <p className="description_content">{props.content}</p>}
         </div>
     )
 };
