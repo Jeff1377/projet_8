@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../composants/Footer/Footer';
 import Navbar from '../composants/Navbar/Navbar';
 import Home from '../pages/Home';
 import About from '../pages/About';
@@ -12,7 +11,6 @@ const HeadFootLayout = () => {
         <>
         <Navbar />
         <Outlet />
-        <Footer />
         </>
 )};
 
