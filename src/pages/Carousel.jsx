@@ -1,5 +1,5 @@
 import React from 'react';
-import Logements from '../composants/Logements/Logements';
+import Logements from '../composants/Logements/Logements.jsx';
 
 function Carousel () {
  return(

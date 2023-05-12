@@ -2,10 +2,9 @@
     border-radius: 15px;
     display: flex;
     width: 28%;
-    align-items: end;
+    align-items: flex-end;
     min-width: 280px;
     position: relative;
-    
 }
 
 .apart_text {
@@ -17,7 +16,6 @@
     padding-left: 20px;
     bottom: 10px;
     line-height: 26px;
-    
 }
 
 .apart a {

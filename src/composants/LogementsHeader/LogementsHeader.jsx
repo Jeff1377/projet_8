@@ -24,7 +24,7 @@ function LogementsHeader (props) {
             </div>
             <div className="owner_stars">
                 {[1, 2, 3, 4, 5].map((number) => (
-                    <span key={number} className={props.rating >= number ? "fill" : ""}><i class="fa-sharp fa-solid fa-star fa-xl"></i></span>
+                    <span key={number} className={props.rating >= number ? "fill" : ""}><i className="fa-sharp fa-solid fa-star fa-xl"></i></span>
                 ))}
             </div>
         </div>
