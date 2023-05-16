@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Carousel from '../pages/Carousel';
 import Error from '../pages/Error';
+import Footer from "../composants/Footer/Footer";
 import { createBrowserRouter, Outlet } from 'react-router-dom';
 
 const HeadFootLayout = () => {
@@ -11,6 +12,7 @@ const HeadFootLayout = () => {
         <>
         <Navbar />
         <Outlet />
+        <Footer />
         </>
 )};
 
