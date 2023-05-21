@@ -5,11 +5,9 @@ import router from './routes/router';
 
 function App() {
    return (
-      <>
-     <div className="app_body">
-        <RouterProvider router={router} />
+     <div>
+      <RouterProvider router={router} />
      </div>
-     </>
    );
   }
 
