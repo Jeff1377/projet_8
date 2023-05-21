@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         path: "/carousel",
         element: <Carousel />
         },
-        {path: "/error",
+        {path: "/*",
         element: <Error />
         }
       ] 
