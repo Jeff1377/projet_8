@@ -20,7 +20,7 @@ function Logements() {
             .then((houses) => {
                 const house = houses.find((house) => house.id === location.state.houseId);
                 if (!house) {
-                    navigate("/error", { state: { message: "house not found" } });
+                    navigate("/*", { state: { message: "house not found" } });
                 }
                 else {
                     
